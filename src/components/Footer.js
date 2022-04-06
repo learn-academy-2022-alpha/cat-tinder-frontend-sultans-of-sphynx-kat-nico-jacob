@@ -14,7 +14,7 @@ export default class Footer extends Component {
                     <section className="footer-info">
                         <section className="footer-info-left">
                             <section className="footer-info__name">
-                                Left column
+                            <h2>Thank You For Visiting!</h2>
                             </section>
                             <section className="footer-info__returns">
                                 Left column 2nd item
