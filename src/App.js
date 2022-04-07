@@ -13,11 +13,7 @@ import Error from './pages/NotFound'
 import CatEdit from './pages/CatEdit'
 
 import mockCats from "./mockCats";
-import {
-    BrowserRouter as Router,
-    Route,
-    Switch
-} from 'react-router-dom'
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 
 export default class App extends Component {
     constructor(props) {
@@ -25,6 +21,10 @@ export default class App extends Component {
         this.state = {
             cats: mockCats
         }
+    }
+
+    createCat = (cat) => {
+        console.log(cat)
     }
 
     render() {
@@ -41,13 +41,13 @@ export default class App extends Component {
                         let cat = this.state.cats.find(cat => cat.id === +id)
                         return <CatShow cat={cat} />
                     }} />
-                    <Route path="/catnew" component={CatNew} />
+                    <Route path="/catnew" render={(props) => <CatNew createCat={this.createCat} />}
+                    />
                     <Route path="/catedit" component={CatEdit} />
                     <Route component={Error}/>
                 </Switch>
                 <Footer />
             </Router>
-
         </>
     );
   }
