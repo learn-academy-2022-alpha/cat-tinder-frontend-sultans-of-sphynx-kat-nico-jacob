@@ -1,20 +1,24 @@
 import React, {Component} from "react";
-import {Card, CardBody, CardLink, CardSubtitle, CardText, CardTitle, Col} from 'reactstrap'
+import {Card, CardBody, CardSubtitle, CardText, CardTitle, Col} from 'reactstrap'
+import { NavLink } from 'react-router-dom'
 
 export default class CatIndex extends Component {
     render() {
+        let catProps = this.props.cats
         return(
             <>
-                <h3>Meet the Cats!</h3>
+                <h2>Meet the Cats!</h2>
                 <br />
                 <Col sm="6">
-                    {this.props.cats.map(cat => {
+                    {catProps && catProps.map(cat => {
                         return(
                             <div>
                                 <Card>
                                     <CardBody>
                                         <CardTitle tag="h5">
-                                            {cat.name}
+                                            <NavLink to={`/catshow/${cat.id}`}>
+                                                {cat.name}
+                                            </NavLink>
                                         </CardTitle>
                                         <CardSubtitle className="mb-2 text-muted" tag="h6">
                                             {cat.enjoys}
@@ -27,12 +31,6 @@ export default class CatIndex extends Component {
                                             Some quick example text to build on the card title
                                             and make up the bulk of the card's content.
                                         </CardText>
-                                        <CardLink href="#">
-                                            Card Link
-                                        </CardLink>
-                                        <CardLink href="#">
-                                            Another Link
-                                        </CardLink>
                                     </CardBody>
                                 </Card>
                             </div>
