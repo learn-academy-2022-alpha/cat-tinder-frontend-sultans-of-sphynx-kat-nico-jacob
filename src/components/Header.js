@@ -22,7 +22,7 @@ export default class Header extends Component {
                         light
                     >
                         <NavbarBrand href="/">
-                            <h1>Find Your Purrfect Match!</h1>
+                            <h1>Kittinder</h1>
                         </NavbarBrand>
                         <NavbarToggler onClick={function noRefCheck(){}} />
                         <Collapse navbar>
