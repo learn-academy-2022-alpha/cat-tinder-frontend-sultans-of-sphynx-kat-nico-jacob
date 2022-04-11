@@ -45,13 +45,14 @@
 	border:1px solid #4e6096;
 	display:inline-block;
 	cursor:pointer;
-	color:#ffffff;
+	color:#efefef;
 	font-family:cursive;
-	font-size:21px;
+	font-size:28px;
 	padding:12px 40px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #283966;
-  float: right;
+  float:right;
+  margin: 10px;
 }
 .join:hover {
 	background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
@@ -87,10 +88,10 @@
 	top:1px;
 }
 .create-form{
-  position: fixed;
+  position: absolute;
   right: 10px;
-  margin-right: 150px;
-  margin-top: 400px;
+  margin-right: 120px;
+  margin-top: 300px;
 }
 .form-group {
   width: 425px;
@@ -100,8 +101,8 @@
 }
 
 #cat-card {
-  float: left;
-  padding: 1 5px;
+  float:left;
+  padding: 15 50px;
   width: 250px;
   height: 370px;
   margin: 10px 20px;
@@ -115,27 +116,29 @@
 }
 
 .cat-show{
-  position: absolute;
-  width: 436px;
-  height: 530px;
-  left: 500px;
-  top: 250px;
+  position: relative;
+  width: 177px;
+  height: 500px;
+  left: 750px;
+  top: 50px;
 }
 
 .text-box{
-  text-align: center;
+  text-align: left;
   background: #6C6F7F;
   color: #efefef;
   font-family: cursive;
   font-size: 36px;
 
   position: relative;
-  left: 950px;
-  top: 250px;
-  width: 330px;
-  height: 536px;
+  left: 1050px;
+  width: 500px;
+  height: 500px;
+  bottom: 100px;
+  radius: 5px 50px 0 0;
 
   border: 1px solid #000000;
+  border-radius: 5px 50px 50px 0px;
   box-sizing: border-box;
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -146,8 +149,8 @@
 .placeholder1{
   background: gray;
   position:relative;
-  left: 350px;
-  bottom: 300px;
+  left: 500px;
+  bottom: 900px;
   height: 150px;
   width: 150px;
   border: 3px solid black;
@@ -160,8 +163,8 @@
 .placeholder2{
   background: gray;
   position: relative;
-  left: 350px;
-  bottom: 300px;
+  left: 500px;
+  bottom: 850px;
   height: 150px;
   width: 150px;
   border: 3px solid black;
@@ -174,8 +177,8 @@
 .placeholder3{
   background: gray;
   position: relative;
-  bottom: 300px;
-  left: 350px;
+  bottom: 800px;
+  left: 500px;
   height: 150px;
   width: 150px;
   border: 3px solid black;
@@ -215,6 +218,7 @@
 
 .header {
   background-color: #1F2733;
+  padding-bottom: 2px;
 }
 
 .nav-text {
@@ -226,9 +230,36 @@
 }
 
 .username {
-  position: fixed;
-  top: 300px;
-  left: 75px;
+  position: relative;
+  right: 450px;
   color: #efefef;
   font-family: cursive;
+}
+.profile-pic {
+  position: relative;
+  right: 300px;
+  bottom: 100px;
+}
+
+.show-card {
+  position: relative;
+  right:45px;
+  height:700px;
+  width:500px;
+  border:2px;
+  border-style:solid;
+  border-color:#000000;
+  border-radius: 0px 92px 0px 105px;
+  color:#2E3752;
+  margin-bottom: -20px;
+  margin-top: -25px
+}
+
+.name-card {
+  font-size:40px;
+  color: #2E3752;
+  font-family: cursive;
+  border: 2px solid #2E3752;
+  width: 100px;
+  z-index: 1;
 }

@@ -29,9 +29,9 @@ export default class Header extends Component {
                                 className="me-auto"
                                 navbar
                             >
-                            <img src= "img/logo.png"
-                                    height='75px'
-                                    width='75px'></img>
+                            <img src= "img/logo.png" style={{
+                                    height:'75px',
+                                    width:'75px'}}/>
                                     <h1 style={{
                                       color:"#BE5A9C",
                                       paddingTop:"5px",

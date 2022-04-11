@@ -10,7 +10,7 @@ export default class CatNew extends Component {
                   position: 'center',
                   backgroundRepeat: 'no-repeat',
                   backgroundSize: '1920px 1080px',
-                  backgroundAttachment: 'scroll',
+                  backgroundAttachment: 'sticky',
               }}>
 
               <form class="create-form">
