@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import logo from "../assets/logo.png"
 import {
     Collapse, DropdownItem, DropdownMenu,
     DropdownToggle,
@@ -23,15 +24,13 @@ export default class Header extends Component {
                     >
                         <NavbarBrand href="/">
                         </NavbarBrand>
+                        <img src= {logo} class= "logo"/>
                         <NavbarToggler onClick={function noRefCheck(){}} />
                         <Collapse navbar>
                             <Nav
                                 className="me-auto"
                                 navbar
                             >
-                            <img src= "img/logo.png" style={{
-                                    height:'75px',
-                                    width:'75px'}}/>
                                     <h1 style={{
                                       color:"#BE5A9C",
                                       paddingTop:"5px",

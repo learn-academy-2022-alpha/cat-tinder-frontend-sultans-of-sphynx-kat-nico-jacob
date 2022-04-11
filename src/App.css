@@ -263,3 +263,8 @@
   width: 100px;
   z-index: 1;
 }
+
+.logo {
+          height:'75px';
+          width:75px;
+}

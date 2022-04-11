@@ -30,7 +30,6 @@ export default class App extends Component {
     render() {
 
     return (
-        <>
             <Router>
                 <Header />
                 <Switch>
@@ -48,8 +47,6 @@ export default class App extends Component {
                 <Footer />
             </Router>
 
-        </>
     );
   }
 }
-
