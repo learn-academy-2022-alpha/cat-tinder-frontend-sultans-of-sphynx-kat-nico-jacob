@@ -15,14 +15,13 @@ export default class Header extends Component {
     render() {
         return(
             <>
-                <div>
+                <div class= "header">
                     <Navbar
-                        color="light"
+                        color="#1F2733"
                         expand="md"
                         light
                     >
                         <NavbarBrand href="/">
-                            <h1>Kittinder</h1>
                         </NavbarBrand>
                         <NavbarToggler onClick={function noRefCheck(){}} />
                         <Collapse navbar>
@@ -30,19 +29,26 @@ export default class Header extends Component {
                                 className="me-auto"
                                 navbar
                             >
+                            <img src= "img/logo.png"
+                                    height='75px'
+                                    width='75px'></img>
+                                    <h1 style={{
+                                      color:"#efefef",
+                                      paddingTop:"5px",
+                                      fontSize:"48px"}}>Kittinder</h1>
                                 <NavItem>
                                     <NavLink href="/">
-                                        Home
+                                        <h2 class="nav-text">Home</h2>
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
                                     <NavLink href="/catindex">
-                                        Find a match
+                                        <h2 class="nav-text">Find a match</h2>
                                     </NavLink>
                                 </NavItem>
                                 <UncontrolledDropdown inNavbar nav>
-                                    <DropdownToggle caret nav>
-                                        Options
+                                    <DropdownToggle nav>
+                                        <h2 class="nav-text">Options</h2>
                                     </DropdownToggle>
                                     <DropdownMenu right>
                                         <DropdownItem>
