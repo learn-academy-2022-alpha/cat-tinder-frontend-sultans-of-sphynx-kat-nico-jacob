@@ -9,7 +9,7 @@ export default class Home extends Component {
               position: 'center',
               backgroundRepeat: 'no-repeat',
               backgroundSize: '1920px 1080px',
-              backgroundAttachment: 'fixed'
+              backgroundAttachment: 'sticky'
             }}>
               <a href="/CatNew" class="join">Join Today</a>
             </div>

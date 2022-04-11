@@ -12,7 +12,7 @@ export default class CatIndex extends Component {
                 position: 'center',
                 backgroundRepeat: 'no-repeat',
                 backgroundSize: '1920px 1080px',
-                backgroundAttachment: 'fixed',
+                backgroundAttachment: 'sticky',
             }}>>
             <h2 style={{
               position: 'relative',
@@ -27,9 +27,10 @@ export default class CatIndex extends Component {
               flexWrap: 'wrap',
               marginTop: '100px',
               position: 'relative',
-              left: '650px',
+              left: '400px',
               top: '50px'
             }}>
+            <img src="${user.image}" alt="Profile Picture" class="profile-pic"></img>
             <h1 class="username">Hi #User</h1>
                 <br />
                 <Col sm="6">

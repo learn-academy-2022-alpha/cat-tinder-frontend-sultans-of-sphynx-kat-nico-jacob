@@ -12,25 +12,30 @@ export default class CatShow extends Component {
                 position: 'center',
                 backgroundRepeat: 'no-repeat',
                 backgroundSize: '1920px 1080px',
-                backgroundAttachment: 'fixed',
-            }}>>
+                backgroundAttachment: 'sticky',
+            }}>
             <a href="/CatIndex" class="dashboard">Dashboard</a>
                 <div class="cat-show">
                   <Card>
-                    <CardText style={{
-                      fontSize:"40px",
-                      background:"#efefef",
-                      fontFamily: 'cursive'
-                    }}> {cat.name}, {cat.age}</CardText>
-                        <img src={cat.image} alt="adorable cat"/>
+                    <CardText class="name-card"></CardText>
+                        <img src={cat.image} alt="adorable cat" class="show-card"/>
                   </Card>
                 </div>
-                <div class="text-box">
+                <div class="text-box"><p style={{
+                  fontSize:"40px",
+                  color:"3A435E",
+                  fontFamily: 'cursive',
+                  marginBottom: "95px",
+                  border: "2px solid black",
+                  borderRadius: "5px 50px 0 0",
+                  width: "500px",
+                  marginBottom: "25px",
+                }}>{cat.name}, {cat.age}</p>
                   {cat.enjoys}
                 </div>
-                <div class='placeholder1'>Placeholder</div>
-                <div class='placeholder2'>Placeholder</div>
-                <div class='placeholder3'>Placeholder</div>
+                <div class='placeholder1'>Placeholder Image</div>
+                <div class='placeholder2'>Placeholder Image</div>
+                <div class='placeholder3'>Placeholder Image</div>
             </div>
         )
     }
