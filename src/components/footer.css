@@ -1,4 +1,5 @@
 .footer {
+    background-color: #1F2733;
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
@@ -22,6 +23,8 @@
 .footer-info  {
     display: flex;
     justify-content: center;
+    font-family: cursive;
+    color: #efefef;
 }
 
 .footer-info-left, .footer-info-center, .footer-info-right {

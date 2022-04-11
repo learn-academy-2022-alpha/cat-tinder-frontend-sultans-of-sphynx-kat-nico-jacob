@@ -8,34 +8,27 @@ export default class Footer extends Component {
                 <section className="footer">
                     <hr className="footer-seperator" />
                     <section className="footer-social-media">
-                        <h1>Footer </h1>
                         {/*<a href="/" target="_blank" rel="noopener noreferrer">LinkedIn</a>*/}
                     </section>
                     <section className="footer-info">
                         <section className="footer-info-left">
                             <section className="footer-info__name">
-                            <h2>Thank You For Visiting!</h2>
-                            </section>
-                            <section className="footer-info__returns">
-                                Left column 2nd item
+                            <h3>Thank You For Visiting! We're a work in progress so thanks for the paitence!</h3>
                             </section>
                         </section>
                         <section className="footer-info-center">
-                            <section className="footer-info__email">
-                                middle column
-                            </section>
                             <section className="footer-info__terms">
-                                middle column
-                                <br />
-                                Copyright
+                            <br />
+                            <br />
+                                Copyright Sultans Of Sphynx LLC
                             </section>
                         </section>
                         <section className="footer-info-right">
                             <section className="footer-info__number">
-                                right column
+                                <img src="img/vector.png"></img>Follow Us On Instagram!
                             </section>
                             <section className="footer-info__contact">
-                                right column
+                                <img src="img/vector-2.png"></img>Friend Us!
                             </section>
                         </section>
                     </section>

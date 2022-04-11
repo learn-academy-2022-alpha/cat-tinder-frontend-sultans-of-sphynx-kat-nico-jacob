@@ -60,9 +60,6 @@ export default class Header extends Component {
                                     </DropdownMenu>
                                 </UncontrolledDropdown>
                             </Nav>
-                            <NavbarText>
-                                Sultans of Sphynx
-                            </NavbarText>
                         </Collapse>
                     </Navbar>
                 </div>
