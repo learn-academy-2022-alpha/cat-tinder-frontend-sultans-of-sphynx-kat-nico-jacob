@@ -3,11 +3,16 @@ import React, {Component} from "react";
 export default class Home extends Component {
     render() {
         return(
-            <>
-                <h1>CAT TINDER!</h1>
-                <h2>Home </h2>
-            </>
-
+            <div style= {{
+              backgroundImage: `url("/img/Home.png")`,
+              height: '100vh',
+              position: 'center',
+              backgroundRepeat: 'no-repeat',
+              backgroundSize: '1920px 1080px',
+              backgroundAttachment: 'fixed'
+            }}>
+              <a href="/CatNew" class="join">Join Today</a>
+            </div>
         )
     }
 }

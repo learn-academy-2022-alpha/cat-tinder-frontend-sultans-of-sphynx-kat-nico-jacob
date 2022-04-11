@@ -6,38 +6,53 @@ export default class CatIndex extends Component {
     render() {
         let catProps = this.props.cats
         return(
-            <>
-                <h2>Meet the Cats!</h2>
+            <div style= {{
+                backgroundImage: `url("/img/Index-3.png")`,
+                height: '100vh',
+                position: 'center',
+                backgroundRepeat: 'no-repeat',
+                backgroundSize: '1920px 1080px',
+                backgroundAttachment: 'fixed',
+            }}>>
+            <h2 style={{
+              position: 'relative',
+              top: '75px',
+              left: '400px',
+              fontSize: '48px',
+              color: '#B3B4BD',
+              fontFamily: 'Cursive'
+            }}>Find Out Who's Nearby</h2>
+            <div style= {{
+              display: 'flex',
+              flexWrap: 'wrap',
+              marginTop: '100px',
+              position: 'relative',
+              left: '650px',
+              top: '50px'
+            }}>
+            <h1 class="username">Hi #User</h1>
                 <br />
                 <Col sm="6">
                     {catProps && catProps.map(cat => {
                         return(
-                            <div>
+                            <div id='cat-card'>
+                            <a href={`CatShow/${cat.id}`}>
                                 <Card>
                                     <CardBody>
-                                        <CardTitle tag="h5">
-                                            <NavLink to={`/catshow/${cat.id}`}>
-                                                {cat.name}
-                                            </NavLink>
+                                        <CardTitle>
+                                              <h4>{cat.name}, {cat.age} </h4>
                                         </CardTitle>
-                                        <CardSubtitle className="mb-2 text-muted" tag="h6">
-                                            {cat.enjoys}
-                                        </CardSubtitle>
                                     </CardBody>
                                     <img alt="Card image cap"
-                                         src={cat.image} width="100%"/>
-                                    <CardBody>
-                                        <CardText>
-                                            Some quick example text to build on the card title
-                                            and make up the bulk of the card's content.
-                                        </CardText>
-                                    </CardBody>
+                                         src={cat.image} height='300px'/>
                                 </Card>
+                                </a>
                             </div>
                         )
                     })}
                 </Col>
-            </>
+              </div>
+            </div>
         )
     }
 }

@@ -1,6 +1,7 @@
 import React, {Component} from "react";
-import { Button, Form, FormGroup, Input, Label} from 'reactstrap'
-import { Redirect } from 'react-router-dom'
+
+import { useForm } from "react-hook-form"
+
 
 export default class CatNew extends Component {
     constructor(props){
@@ -29,32 +30,40 @@ export default class CatNew extends Component {
 
     render() {
         return(
-            <>
-                <h1>Add a new Fur Friend!</h1>
-                <Form>
-                    <FormGroup>
-                        <Label>Name</Label>
-                        <Input type="text" name="name" value={this.state.newCat.name} onChange={this.handleChange}/>
-                    </FormGroup>
-                    <FormGroup>
-                        <Label>Age</Label>
-                        <Input type="text" name="age" value={this.state.newCat.age} onChange={this.handleChange}/>
-                    </FormGroup>
-                    <FormGroup>
-                        <Label>Enjoys</Label>
-                        <Input type="text" name="enjoys" value={this.state.newCat.enjoys} onChange={this.handleChange}/>
-                    </FormGroup>
-                    <FormGroup>
-                        <Label>Add a sweet pic!</Label>
-                        <Input type="text" name="image" value={this.state.newCat.image} onChange={this.handleChange}/>
-                    </FormGroup>
-                    <Button name="submit" onClick={this.handleSubmit}>
-                        Create a New Profile
-                    </Button>
-                    {this.state.submitted && <Redirect to="/catindex" />}
-                </Form>
 
-            </>
+              <div style= {{
+                  backgroundImage: `url("/img/Create.png")`,
+                  height: '100vh',
+                  position: 'center',
+                  backgroundRepeat: 'no-repeat',
+                  backgroundSize: '1920px 1080px',
+                  backgroundAttachment: 'scroll',
+              }}>
+
+              <form class="create-form">
+                  <p class="form-group">
+                      <label>Username</label>
+                      <input class="form-control" type="text" placeholder="Enter your Username"></input>
+                  </p>
+                  <p class="form-group">
+                      <label>Password</label>
+                      <input class="form-control" type="password" placeholder="Enter your password"></input>
+                  </p>
+                  <p class="form-group">
+                      <label>Age</label>
+                      <input class="form-control" type="number" placeholder="Enter your age"></input>
+                  </p>
+                  <p class="form-group">
+                      <label>Location</label>
+                      <input class="form-control" type="text" placeholder="Enter your location"></input>
+                  </p>
+                  <p class="form-group">
+                      <label>Show Off! Give Us Your Best Side!</label>
+                      <input class="form-control" type="text" placeholder="Enter your location"></input>
+                  </p>
+                  <a href="/CatIndex" class="join2">Join Today</a>
+              </form>
+          </div>
         )
     }
 }
