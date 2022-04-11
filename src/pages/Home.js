@@ -4,7 +4,7 @@ export default class Home extends Component {
     render() {
         return(
             <div style= {{
-              backgroundImage: `url("/img/Landing.png")`,
+              backgroundImage: `url("/img/Home.png")`,
               height: '100vh',
               position: 'center',
               backgroundRepeat: 'no-repeat',

@@ -30,6 +30,10 @@ export default class CatNew extends Component {
                       <label>Location</label>
                       <input class="form-control" type="text" placeholder="Enter your location"></input>
                   </p>
+                  <p class="form-group">
+                      <label>Show Off! Give Us Your Best Side!</label>
+                      <input class="form-control" type="text" placeholder="Enter your location"></input>
+                  </p>
                   <a href="/CatIndex" class="join2">Join Today</a>
               </form>
           </div>

@@ -7,12 +7,12 @@ export default class CatShow extends Component {
         let { cat } = this.props
         return(
             <div style= {{
-                backgroundImage: `url("/img/Index-2.png")`,
+                backgroundImage: `url("/img/Index-3.png")`,
                 height: '100vh',
                 position: 'center',
                 backgroundRepeat: 'no-repeat',
                 backgroundSize: '1920px 1080px',
-                backgroundAttachment: 'scroll',
+                backgroundAttachment: 'fixed',
             }}>>
             <a href="/CatIndex" class="dashboard">Dashboard</a>
                 <div class="cat-show">

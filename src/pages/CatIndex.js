@@ -7,12 +7,12 @@ export default class CatIndex extends Component {
         let catProps = this.props.cats
         return(
             <div style= {{
-                backgroundImage: `url("/img/Index-2.png")`,
+                backgroundImage: `url("/img/Index-3.png")`,
                 height: '100vh',
                 position: 'center',
                 backgroundRepeat: 'no-repeat',
                 backgroundSize: '1920px 1080px',
-                backgroundAttachment: 'scroll',
+                backgroundAttachment: 'fixed',
             }}>>
             <h2 style={{
               position: 'relative',
@@ -20,7 +20,7 @@ export default class CatIndex extends Component {
               left: '400px',
               fontSize: '48px',
               color: '#B3B4BD',
-              fontFamily: 'Bad Script'
+              fontFamily: 'Cursive'
             }}>Find Out Who's Nearby</h2>
             <div style= {{
               display: 'flex',
@@ -30,6 +30,7 @@ export default class CatIndex extends Component {
               left: '650px',
               top: '50px'
             }}>
+            <h1 class="username">Hi #User</h1>
                 <br />
                 <Col sm="6">
                     {catProps && catProps.map(cat => {
@@ -38,8 +39,8 @@ export default class CatIndex extends Component {
                             <a href={`CatShow/${cat.id}`}>
                                 <Card>
                                     <CardBody>
-                                        <CardTitle tag="h5">
-                                                {cat.name}, {cat.age}
+                                        <CardTitle>
+                                              <h4>{cat.name}, {cat.age} </h4>
                                         </CardTitle>
                                     </CardBody>
                                     <img alt="Card image cap"
