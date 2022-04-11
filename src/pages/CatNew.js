@@ -1,9 +1,36 @@
 import React, {Component} from "react";
+
 import { useForm } from "react-hook-form"
 
+
 export default class CatNew extends Component {
+    constructor(props){
+        super(props)
+        this.state = {
+            newCat: {
+                name: "",
+                age: "",
+                enjoys: "",
+                image: ""
+            },
+            submitted: false
+        }
+    }
+
+    handleSubmit = () => {
+        this.props.createCat(this.state.newCat)
+        this.setState({submitted: true})
+    }
+
+    handleChange = (e) => {
+        let { newCat } = this.state
+        newCat[e.target.name] = e.target.value
+        this.setState({newCat: newCat})
+    }
+
     render() {
         return(
+
               <div style= {{
                   backgroundImage: `url("/img/Create.png")`,
                   height: '100vh',
